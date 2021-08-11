@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/Module.symvers := sed 's/ko$$/o/' /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/modules.order | scripts/mod/modpost -m -a   -o /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/Module.symvers -e -i Module.symvers   -T -

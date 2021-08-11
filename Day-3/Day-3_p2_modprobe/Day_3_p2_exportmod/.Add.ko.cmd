@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Add.ko := arm-linux-gnueabihf-ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Add.ko /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Add.o /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Add.mod.o;  true

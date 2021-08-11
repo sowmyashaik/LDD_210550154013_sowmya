@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/Module.symvers := sed 's/ko$$/o/' /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/modules.order | scripts/mod/modpost -m -a   -o /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/Module.symvers -e -i Module.symvers   -T -

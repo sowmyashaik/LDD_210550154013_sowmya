@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.ko /home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.o /home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.mod.o;  true

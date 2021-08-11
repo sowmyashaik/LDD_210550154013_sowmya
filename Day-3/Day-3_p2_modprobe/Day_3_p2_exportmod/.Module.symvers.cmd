@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Module.symvers := sed 's/ko$$/o/' /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/modules.order | scripts/mod/modpost -m -a   -o /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Module.symvers -e -i Module.symvers   -T -

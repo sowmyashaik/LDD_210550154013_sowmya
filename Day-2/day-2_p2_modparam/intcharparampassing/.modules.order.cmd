@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/modparam/intcharparampassing/modules.order := {   echo /home/sowmya/rpi4/device_drivers/native/modparam/intcharparampassing/intcharparampassing.ko; :; } | awk '!x[$$0]++' - > /home/sowmya/rpi4/device_drivers/native/modparam/intcharparampassing/modules.order

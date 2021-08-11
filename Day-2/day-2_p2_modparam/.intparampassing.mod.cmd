@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.mod := { echo  /home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.o;  echo; } > /home/sowmya/rpi4/device_drivers/native/modparam/intparampassing.mod

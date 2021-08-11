@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Avg.ko := arm-linux-gnueabihf-ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Avg.ko /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Avg.o /home/sowmya/rpi4/device_drivers/native/Day-3/Day_3_p1_exportmod/Avg.mod.o;  true

@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/dynamic_allocation.mod := { echo  /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/dynamic_allocation.o;  echo; } > /home/sowmya/rpi4/device_drivers/cross_compile/char_drivers/dynamic_allocation/dynamic_allocation.mod
