@@ -91,6 +91,7 @@ int NAME_open(struct inode *inode, struct file *file)
 	return 0;
 }
 
+//read call
 ssize_t NAME_read(struct file *filp, char __user *ubuf, size_t count, loff_t *offp)
 {
 	char kbuf[100] = "I am sending from kernel buffer";
@@ -110,6 +111,7 @@ ssize_t NAME_read(struct file *filp, char __user *ubuf, size_t count, loff_t *of
 	}
 }
 
+//write call
 ssize_t NAME_write(struct file *filp, const char __user *ubuf, size_t count, loff_t *offp)
 {
 	char kbuf[100];
@@ -137,7 +139,7 @@ int NAME_release(struct inode *inode, struct file *file)
 	return 0;
 }
 
-
+//IOCTL functionality
 static long NAME_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 {
 	switch(cmd){
@@ -176,10 +178,10 @@ static long NAME_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 	            else if(oper==4)
 	            {
 	            ouput=n1/n2;
-	            printk("Division is :%d\n",ouput);
+	            printk("Division is :%d\n",ouput);//printing data in kernel
 	            }
 	            
-	            copy_to_user((int*)arg, &ouput, sizeof(ouput));
+	            copy_to_user((int*)arg, &ouput, sizeof(ouput));//passing the data from kernel to user
 	            break;
 	            
 	        

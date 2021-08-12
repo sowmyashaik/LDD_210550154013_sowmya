@@ -34,6 +34,7 @@ static struct file_operations fops =
 	.unlocked_ioctl = NAME_ioctl,
 };
 
+//structure data
 static struct data {
 	int n1;
 	int n2;
@@ -49,7 +50,7 @@ static int __init CharDevice_init(void)
 	int result;
 	int MAJOR,MINOR;
 	dev_t Mydev;
-	Mydev = MKDEV(255,0);//creating device number
+	Mydev = MKDEV(255,0);//creating device number statistically
 	MAJOR=MAJOR(Mydev);
 	MINOR=MINOR(Mydev);
 	printk("\n MAJOR NO. is %d.... MINOR NO. is %d\n",MAJOR,MINOR);
@@ -97,6 +98,7 @@ int NAME_open(struct inode *inode, struct file *file)
 	return 0;
 }
 
+//read call
 ssize_t NAME_read(struct file *filp, char __user *ubuf, size_t count, loff_t *offp)
 {
 	char kbuf[100] = "I am sending from kernel buffer";
@@ -116,6 +118,7 @@ ssize_t NAME_read(struct file *filp, char __user *ubuf, size_t count, loff_t *of
 	}
 }
 
+//write call
 ssize_t NAME_write(struct file *filp, const char __user *ubuf, size_t count, loff_t *offp)
 {
 	char kbuf[100];
@@ -143,7 +146,7 @@ int NAME_release(struct inode *inode, struct file *file)
 	return 0;
 }
 
-
+//IOCTL Functionality
 static long NAME_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 {
 	char ubuf[50];
@@ -161,7 +164,7 @@ static long NAME_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 	            if(senddata->oper == 1)
 	            {
 	            ouput=(senddata->n1)+(senddata->n2);
-	            printk("Addition is : %d\n",ouput);
+	            printk("Addition is : %d\n",ouput);//printing the values in kernel
 	            }
 	            else if(senddata->oper==2)
 	            {
