@@ -199,7 +199,7 @@ module_exit(CharDevice_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("SOWMYA");
-
+MODULE_DESCRIPTION("character driver that implements IOCTL functionality");
 
 
 

@@ -197,7 +197,7 @@ module_exit(CharDevice_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("SOWMYA");
-
+MODULE_DESCRIPTION("passing a structure using IOCTL to the driver having 3 elements and perform operations of program1");
 
 
 
