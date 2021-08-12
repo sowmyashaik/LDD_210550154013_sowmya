@@ -194,7 +194,7 @@ static long NAME_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 	            return 0;
 }
 
-//MACROS
+//MACROSs
 module_init(CharDevice_init);
 module_exit(CharDevice_exit);
 
