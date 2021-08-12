@@ -1,0 +1,1 @@
+cmd_/home/sowmya/rpi4/device_drivers/native/Day-5/p2/p2.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/sowmya/rpi4/device_drivers/native/Day-5/p2/p2.ko /home/sowmya/rpi4/device_drivers/native/Day-5/p2/p2.o /home/sowmya/rpi4/device_drivers/native/Day-5/p2/p2.mod.o;  true
